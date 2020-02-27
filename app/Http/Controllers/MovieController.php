@@ -7,7 +7,7 @@ use App\Movie;
 class MovieController extends Controller
 {
     public function lista(){
-        $peliculas=Movie::all();
+        $peliculas=Movie::orderBy('id','ASC')->paginate(5);
         return view('peliculas',compact('peliculas'));
     }
 

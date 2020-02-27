@@ -22,7 +22,7 @@ Route::get('/agregarPelicula', 'MovieController@mostrarFormulario');
 Route::post('/agregarPelicula', 'MovieController@agregarPelicula');
 
 Route::get('/actores','ActorsController@listar');
-Route::get('/actores/{$id}','ActorsController@describirse');
+Route::get('/actores/{id}','ActorsController@describirse');
 
 Auth::routes();
 

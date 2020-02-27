@@ -22,7 +22,7 @@
     <tr class="bg-ligth">
         <th scope="row">{{$actor->id}}</th>
         <td>
-            <a href="/pelicula/{{$actor->id}}">{{$actor->first_name . " " .$actor->last_name}}</a>
+            <a href="/actores/{{$actor->id}}">{{$actor->first_name . " " .$actor->last_name}}</a>
         </td>
         <td>
             <a class= "btn btn-success btn-sm" href="">Agregar</a>
@@ -44,5 +44,5 @@
     @endforeach
     </tbody>
 </table>
-
+{{$actors->links()}}
 @endsection

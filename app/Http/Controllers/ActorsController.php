@@ -7,7 +7,7 @@ use App\Actor;
 class ActorsController extends Controller
 {
     public function listar(){
-        $actors=Actor::orderBy('id','DESC')->paginate(5);
+        $actors=Actor::orderBy('id','ASC')->paginate(5);
         return view('actores',compact('actors'));
     }
 

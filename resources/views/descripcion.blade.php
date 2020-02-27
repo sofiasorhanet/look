@@ -15,5 +15,10 @@
         </ul>
     </div>
 
-    
+    <div class="container md">
+        <h3>Actores</h3>
+        @foreach ($pelicula->actors as $actor)
+        <p>{{$actor->first_name . " " .$actor->last_name}}</p>
+        @endforeach
+    </div>
 @endsection
