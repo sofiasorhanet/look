@@ -42,5 +42,10 @@
     
         </form>
     </div>
+    @if (session('mensaje'))
+    <div class="alert alert-success text-center">
+        {{session('mensaje')}}
+    </div>
+@endif
 
 @endsection
