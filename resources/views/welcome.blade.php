@@ -34,6 +34,12 @@
                 position: relative;
             }
 
+            .top-left {
+                position: absolute;
+                left: 10px;
+                top: 18px;
+            }
+
             .top-right {
                 position: absolute;
                 right: 10px;
@@ -46,14 +52,30 @@
 
             .title {
                 font-size: 84px;
+                font-family: fantasy;
+                color: tomato;
+                background-color: aquamarine;
             }
+            .top-left > a {
+                color: #636b6f;
+                background-color: aqua;
+                padding: 15px;
+                font-size: 13px;
+                margin: 1rem;
+                font-weight: 600;
+                letter-spacing: .3rem;
+                text-decoration: none;
+                text-transform: uppercase;
 
+            }
             .links > a {
                 color: #636b6f;
-                padding: 0 25px;
+                background-color: aqua;
+                padding: 15px;
                 font-size: 13px;
+                margin: 1rem;
                 font-weight: 600;
-                letter-spacing: .1rem;
+                letter-spacing: .3rem;
                 text-decoration: none;
                 text-transform: uppercase;
             }
@@ -79,15 +101,22 @@
                 </div>
             @endif
 
+            
             <div class="content">
                 <div class="title m-b-md">
                     Look, Cine en Casa!
                 </div>
+                <div class="top-left">
+                    <a href="/actores">Actores</a>
+                    <a href="/peliculas">Peliculas</a>
+                </div>
 
                 <div class="links">
+                    
                     <a href="https://facebook.com/docs">Facebook</a>
                     <a href="https://twiter.com">Twiter</a>
                     <a href="https://instagram.com">Instagram</a>
+                    
                     
                 </div>
             </div>

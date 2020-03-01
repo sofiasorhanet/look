@@ -25,7 +25,7 @@
             <a href="/actores/{{$actor->id}}">{{$actor->first_name . " " .$actor->last_name}}</a>
         </td>
         <td>
-            <a class= "btn btn-success btn-sm" href="">Agregar</a>
+            <a class= "btn btn-success btn-sm" href="/agregarActor">Agregar</a>
         </td>
         <td>
             <a class= "btn btn-warning btn-sm" href="">Editar</a>

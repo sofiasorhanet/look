@@ -26,18 +26,13 @@
                 <a class= "btn btn-success btn-sm" href="/agregarPelicula">Agregar</a>
             </td>
             <td>
-                <a class= "btn btn-warning btn-sm" href="">Editar</a>
-            </td>
-
-            
+                <a class= "btn btn-warning btn-sm" href="/editaPelicula">Editar</a>
+                
+            </td> 
             <td>
-                <form action=""" method="post">
-                @csrf
-                @method('DELETE')
-                    <button type="submit" class= "btn btn-danger btn-sm" href="">Eliminar</button>
-                </form>
-            </td>
-            
+                <a class="btn btn-danger btn-sm" href="/borrarPelicula/{{$pelicula->id}}"> Borrar Pelicula </a>
+                
+            </td>      
         </tr>
         @endforeach
         </tbody>

@@ -21,8 +21,18 @@ Route::get('/pelicula/{id}', 'MovieController@descripcion');
 Route::get('/agregarPelicula', 'MovieController@mostrarFormulario');
 Route::post('/agregarPelicula', 'MovieController@agregarPelicula');
 
+Route::get('/editaPelicula/{id}', 'MovieController@editar');
+Route::get('/editaPelicula', 'MovieController@actualizar')->name('editaPelicula');
+
+Route::get('/borrarPelicula/{id}', 'MovieController@destroy');
+// Ruta :: get ( '/ borrarPelicula / {id}' , 'MovieController @ destroy' );
+
 Route::get('/actores','ActorsController@listar');
 Route::get('/actores/{id}','ActorsController@describirse');
+
+Route::get('/agregarActor', 'ActorsController@mostrar');
+Route::post('/agregarActor', 'ActorsController@agregarActor');
+
 
 Auth::routes();
 
