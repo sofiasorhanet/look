@@ -82,15 +82,16 @@ class MovieController extends Controller
     
     public function actualizar(Request $id)    {
         //
-        $validator = $this->loginValidation($request);
-        $this->validate($request=[ 
+        
+        $this->validate($pelicula,$id);
+           $pelicula=[ 
             'title' => 'required|min:2',
             'rating' => 'required|numeric|max:10',
-             'awards' => 'required|numeric',
+            'awards' => 'required|numeric',
             'release_date' => 'required|date',
-            ]);
+            ];
  
-        Movie::find($id)->actualizar($request->all());
+        Movie::find($id)->actualizar($pelicula->all());
         return redirect()->route('/peliculas');
     }
 
