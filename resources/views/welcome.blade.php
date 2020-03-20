@@ -66,6 +66,7 @@
                 letter-spacing: .3rem;
                 text-decoration: none;
                 text-transform: uppercase;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
             }
             .links > a {
@@ -78,6 +79,7 @@
                 letter-spacing: .3rem;
                 text-decoration: none;
                 text-transform: uppercase;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
             }
 
             .m-b-md {
